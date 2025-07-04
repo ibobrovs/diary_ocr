@@ -38,7 +38,7 @@ def run_ocr(image_path):
     return text
 
 if __name__ == "__main__":
-    pdf_file = "/home/ibobrovs/handwritten_pdf_ocr/LKM_5_24377_1485-DK_compressed.pdf"
+    pdf_file = "/home/ibobrovs/trocr_project/LKM_5_24377_1485-DK_compressed.pdf"
     pages = pdf_to_images(pdf_file)
     for page in pages:
         processed = preprocess_image(page)
